@@ -1,0 +1,496 @@
+@font-face {
+    font-family: RS;
+    src: url(./assets/64dd054cabb425ac6a0d4607_Leiko-Regular.woff2);
+}
+@font-face {
+    font-family: RE;
+    src: url(./assets/l\ \(1\));
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    font-family: RS;
+    background-color: #111111;
+}
+
+/* NAV SECTON  */
+
+#nav{
+    position: fixed;
+    display: flex;
+    background-color: #111;
+    align-items: flex-start;
+    height: 15vh;
+    padding: 2vw 6vw;
+    width: 100%;
+    justify-content: space-between;
+}
+#nav-part2{
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1.2vh 0;
+    position: relative;
+    z-index: 10;
+}
+#nav-part2 h5{
+    margin-bottom: 1vw;
+    /* opacity: 0; */
+    display: none;
+    overflow: hidden;
+    /* transition: all 0.3s linear; */
+}
+#nav-part2 h5 span{
+    font-size: 0.90vw;
+    font-weight: 400;
+    display: inline-block;
+}
+#nav-part2 h4{
+    font-size: 1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2.6vw;
+}
+
+#nav button{
+    background-color: #0DA34E;
+    display: flex;
+    align-items: center;
+    padding: 6px 5px;
+    border-radius: 30px;
+    font-size: 1vw;
+    border: none;
+    font-weight: 700;
+    color: white;
+    outline: 0;
+}
+button svg{
+    height: 2.3rem;
+    /* font-size: 5rem; */
+    /* margin-left: 1vw; */
+}
+#nav-bottom{
+    /* height: 23vh; */
+    width: 89%;
+    background-color: #111111;
+    position: absolute;
+    top: 100%;
+    z-index: 9;
+    border-bottom: 1px solid #fff;
+}
+
+
+/* NAV SECTION END */
+
+
+/* MAIN SECTION  */
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#page1 h1{
+    font-size: 8.6vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: RE;
+    line-height: 8.6vw;
+    
+}
+#page1 h1:nth-child(1){
+    margin-top: 5vw;
+}
+#page1 h1 span svg{
+    height: 7vw;
+    aspect-ratio: 1;
+    background: #0DA34E;
+    border-radius: 50%;
+}
+#page1 p{
+    text-align: center;
+    font-weight: 500;
+    margin-top: 3vh;
+}
+#page1-something{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+#page1-something h4{
+    font-weight: 400;
+    font-size: 1vw;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+#page1-something h4:nth-last-child(2){
+    border: none;
+}
+
+
+
+/* MOVING DIV ANIMATION PART */
+
+#moving-div{
+    position: absolute;
+    margin-top: 30vh;
+    /* background-color: #0DA34E; */
+    bottom: 0;
+    width: 44%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+}
+.move{
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#moving-div .move img{
+    height: 1.5vw;
+    margin: 0 1vw;
+}
+@keyframes mobe{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+}
+
+.blur-left{
+    height: 100%;
+    width: 20%;
+    background-image: linear-gradient(to right, #111 ,trasparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.blur-right{
+    height: 100%;
+    width: 20%;
+    background-image: linear-gradient(to left, #111 ,trasparent);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+
+/* MOVING DIV ANIMATION END */
+
+
+/* PAGE2 DIV STARTING */
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    padding: 2vw 10vw;
+    padding-bottom: 8vw;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page2-left{
+    height: 100%;
+    width: 40%;
+    /* background-color: #333; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 2vw 0;
+}
+#page2-left p{
+    font-size: 1vw;
+}
+#page2-left h5{
+  width: 70%;
+  font-size: 1.1vw;
+  font-weight: 400;
+}
+
+#page2-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: #333; */
+}
+.right-elem{
+    position: relative;
+    /* background-color: red; */
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    border-bottom: 1px solid #333;
+}
+.right-elem h2{
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+
+#page2-right .right-elem img{
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    /* display: none; */
+    scale: 0;
+    
+}
+
+
+
+/* PAGE 3 STARTED */
+
+
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/videobg.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+}
+
+#page3-icon{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 5vw;
+    border-radius: 50%;
+    /* color: #111; */
+    font-size: 3vw;
+}
+#page3-icon i{
+    color: black;
+    font-size: 5vw;
+}
+#page3-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#page3-center h5{
+    font-size: 1vw;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    margin-top: 1vw;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+#page3-center:hover h5{
+    opacity: 1;
+}
+
+#page3 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transform: scaleX(0.7) scaleY(0);
+    border-radius: 30px;
+
+}
+
+/* PAGE 4 STARTING */
+
+#page4{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    color: #111;
+    border-bottom: 2px solid black;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 10vw;
+}
+.sec-left{
+    height: 100%;
+    width: 25%;
+    /* background-color: #0DA34E; */
+    border-top: 2px solid black;
+   
+}
+.sec-left h2{
+    font-size:2.2vw;
+    font-weight: 500;
+    padding-top: 2vw;
+}
+.sec-left p{
+    font-size: 1.2vw;
+    margin-top: 7vw;
+}
+.sec-right{
+    height: 100%;
+    width: 70%;
+    background-color: antiquewhite;
+    position: relative;
+}
+.sec-right video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.6s;
+}
+.sec-right img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease-in 0.4s;
+}
+
+
+/* SEC DOWN START   */
+
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    color: black;
+}
+
+
+
+
+.sectionDown{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 10vw;
+}
+
+.leftdiv{
+    height: 100%;
+    width: 70%;
+    /* background-color: #0DA34E; */
+    position: relative;
+   
+}
+.leftdiv video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border: 2px solid black; */
+}
+.leftdiv img{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    transition: all ease-in 0.4s;
+}
+
+.rightdiv{
+    height: 100%;
+    width: 25%;
+    /* background-color: antiquewhite; */
+    padding: 1vw;
+    border-top: 2px solid black;
+}
+.rightdiv h3{
+    font-size: 1.8vw;
+    font-weight: 400;
+    margin-top: 1vw;
+}
+.rightdiv p{
+    font-size: 1.2vw;
+    margin-top: 7vw;
+}
+
+
+/* PAGE 6 STARTING */
+
+
+.upDiv{
+    height: 100%;
+    width: 100%;
+    color: white;
+    margin-top: 12vw;
+}
+.section-up{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 0 10vw;
+    justify-content: space-around;
+   
+}
+.section-up h2{
+    padding-bottom: 1vw;
+}
+.section-up img{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+.upDiv1{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+.upDiv1 video{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.upDiv2{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+.upDiv2 video{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+
+
+

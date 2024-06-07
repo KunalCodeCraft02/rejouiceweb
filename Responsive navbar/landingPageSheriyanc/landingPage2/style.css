@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(114, 88, 101,0.881);
+    display: flex;
+}
+#part1{
+    height: 100%;
+    width: 26%;
+    /* background: red; */
+}
+#part2{
+    height: 100%;
+    width: 68%;
+    background: rgb(12, 213, 213);
+    background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(123, 114, 117, 0.393);
+}
+#part3{
+    height: 100%;
+    width: 7%;
+    /* background: greenyellow; */
+}
+#text-div{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translate(0,-50%);
+}
+#text-div h1{
+    font-size: 75px;
+    font-family: monument;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 60px;
+    color: #fff;
+}
+#small-img-div{
+    height: 350px;
+    width: 250px;
+    /* background-color: red; */
+    background-image: url(https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+    transition: all 0.5s linear;
+}
+#vertical-text{
+    position: absolute;
+    width: 100%;
+    transform: rotate(90deg);
+    top: 100%;
+    right: -30%;
+}
+#vertical-text h1{
+    font-size: 65px;
+    font-weight: 900;
+    font-family: Russo One;
+    letter-spacing: 15px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+#small-img-div:hover{
+    transform: scale(1);
+}
+.nav{
+    position: absolute;
+}

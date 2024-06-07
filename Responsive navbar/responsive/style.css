@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu-right{
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+}
+.nav-bar{
+    background-color: #1d4053;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo{
+    margin: 0 20px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:700px) {
+    .logo{
+        display: block;
+    }
+    ul li{
+        display: block; 
+    }
+    ul{
+        display: none;
+    }
+  
+    
+}
+.nav-bar img{
+    height: 45px;
+    float: left;
+    margin: 10px;
+}

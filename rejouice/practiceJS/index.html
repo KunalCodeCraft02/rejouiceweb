@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a id="btn" href="">click me</a>
+    </div>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click",function(){
+            let a = btn.href = "http://127.0.0.1:5500/assets/"
+            console.log(a)
+            
+        })
+        
+    </script>
+</body>
+
+</html>

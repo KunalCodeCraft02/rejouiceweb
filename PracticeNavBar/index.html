@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NAVBAR</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h2>LOGO</h2>
+            <div class="nav-links">
+                <h4>Home</h4>
+                <h4>About</h4>
+                <h4>Contact</h4>
+                <h4>Services</h4>
+                <h4>Feedback</h4>
+                <button id="btn">Menu</button>
+            </div>
+        </nav>
+        <div id="resnav" class="resnav">
+            <h4>Home</h4>
+            <h4>About</h4>
+            <h4>Contact</h4>
+            <h4>Services</h4>
+            <h4>Feedback</h4>
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="main">
+            <div class="text-div">
+                <h1><span>Kunal Bodkhe,</span></h1>
+                <h3>Frontend developer,<span>Ethical hacker</span>,penetration tester</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe maiores in suscipit et quasi provident laborum impedit a numquam blanditiis. Ratione, at debitis.</p>
+                <div class="btn">
+                    <button>See More</button>
+                    <button>Hire Me</button>
+                </div>
+            </div>
+            <div class="img-div">
+                <img src="./dev.png" alt="">
+            </div>
+        </div>
+        <div class="second-section">
+            
+        </div>
+    </div>
+
+    <script>
+        let a = document.getElementById("resnav");
+        let b = document.getElementById("btn");
+        let flag = 0
+        b.addEventListener("click", function () {
+            if (flag == 0) {
+                a.style.top = 0
+                flag = 1
+            }
+            else {
+                a.style.top = "-100%"
+                flag = 0
+            }
+
+        });
+    </script>
+</body>
+
+</html>
